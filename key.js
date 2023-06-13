@@ -1,1 +1,1 @@
-const KEY = "<insert your Golemio API key here'>;
+const KEY = "<insert your Golemio API key here>";
