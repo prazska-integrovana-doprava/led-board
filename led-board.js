@@ -128,8 +128,8 @@ function updateClock(){
   now.getMonth().toString().padStart(2,"0") +
   ".&thinsp;" +
   now.getFullYear().toString().padStart(2,"0");
-  hours = now.getHours().toString().padStart(2,"0");
-  minutes = now.getMinutes().toString().padStart(2,"0");
+  const hours = now.getHours().toString().padStart(2,"0");
+  const minutes = now.getMinutes().toString().padStart(2,"0");
   document.getElementById("date").innerHTML = date;
   document.getElementById("hours").textContent = hours;
   document.getElementById("minutes").textContent = minutes;
