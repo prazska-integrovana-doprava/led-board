@@ -1,0 +1,96 @@
+:root {
+  --displayed-rows: 6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(128px * 0.85 / var(--displayed-rows));
+  outline: 1px dotted white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 384px;
+  height: 128px;
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+  /* transform: scale(9.43); /* Tímto se zapíná zvětšení na 1:1 při zobrazení na 96 dpi monitoru) */
+  transform-origin: top left;
+}
+
+main {
+  overflow: hidden;
+  display: table;
+}
+
+.row {
+  display: table-row;
+  width: 100%;
+}
+
+.row div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.route {
+  width: 10%;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.accessible {
+  width: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.aircondition {
+  width: 10px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.aircondition img {
+  width: 10px;
+}
+
+.headsign {
+  padding-right: 10px;
+  text-overflow: ellipsis;
+}
+
+.arrival {
+  width: 15%;
+  text-align: right;
+}
+
+img {
+  max-height: calc(128px * 0.6 / var(--displayed-rows));
+}
+
+#datetime {
+  display: flex;
+  justify-content: space-between;
+}
+#colon {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2,jump-none)
+}
+
+@keyframes blink {
+  from {
+    color: white;
+  }
+  to {
+    color: #222;
+  }
+}
