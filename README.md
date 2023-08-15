@@ -23,5 +23,7 @@ Příklad výchozí URL se všemi parametry: index.html?airCondition=true&aswIds
 Aplikace je určená pro zobrazování tabulí na LED panelech, a proto podporuje jen minimální podmnožinu požadovaných funkcí. Nejsou podporovány následujcí funkce:
 * Zobrazování řádkového informačního textu
 * Zobrazení celoplošného informačního textu
+* Zobrazení celoplošného střídavého informačního textu
 * Náhradní zpráva při poruše
 * Čtení pro nevidomé
+* Dynamické zvětšování textu na základě počtu řádků
