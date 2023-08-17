@@ -27,3 +27,4 @@ Aplikace je určená pro zobrazování tabulí na LED panelech, a proto podporuj
 * Náhradní zpráva při poruše
 * Čtení pro nevidomé
 * Dynamické zvětšování textu na základě počtu řádků
+* Přidat automaticky kód stanoviště v případě více ID
